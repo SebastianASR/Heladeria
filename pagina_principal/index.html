@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estiloformulario.css">
+    <title>Formulario de Heladería</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="listardatos.html">Listar Datos</a></li>
+        </ul>
+    </nav>
+    
+    <h2>Formulario de Heladería</h2>
+
+    <form id="formulario-heladeria" action="/guardar_helado" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="nombre">Nombre del Helado:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripción:</label>
+            <input type="text" class="form-control" id="descripcion" name="descripcion" required>
+        </div>
+        <div class="form-group">
+            <label for="sabor">Sabor:</label>
+            <input type="text" class="form-control" id="sabor" name="sabor" required>
+        </div>
+        <div class="form-group">
+            <label for="tipo">Tipo:</label>
+            <select class="form-control" id="tipo" name="tipo" required>
+                <option value="" disabled selected>Selecciona un tipo</option>
+                <option value="crema">Crema</option>
+                <option value="sorbete">Sorbete</option>
+                <option value="yogur">Yogur</option>
+                <option value="vegano">Vegano</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="cobertura">Cobertura:</label>
+            <input type="text" class="form-control" id="cobertura" name="cobertura" required>
+        </div>
+        <div class="form-group">
+            <label for="precio">Precio:</label>
+            <input type="number" class="form-control" id="precio" name="precio" required>
+        </div>
+        <div class="form-group">
+            <label for="imagen">Imagen:</label>
+            <input type="file" class="form-control" id="imagen" name="imagen" required>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Enviar">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
