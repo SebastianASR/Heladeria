@@ -1,11 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background: linear-gradient(to right, #fc575e, #f7b42c);
+    color: #333;
 }
 h2 {
     text-align: center;
+    color: #fff;
     margin-bottom: 20px;
 }
 nav ul {
@@ -24,43 +26,50 @@ nav ul li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
 }
 nav ul li a:hover {
-    background-color: #ddd;
+    background-color: #fc575e;
     color: black;
 }
 table {
-    width: 100%;
+    width: 90%;
+    margin: 20px auto;
     border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
-
 table, th, td {
     border: 1px solid #ddd;
 }
-
 th, td {
-    padding: 8px;
+    padding: 12px;
     text-align: left;
+    transition: background-color 0.3s;
 }
-
+th {
+    background-color: #f7b42c;
+    color: white;
+}
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-
 tr:hover {
-    background-color: #ddd;
+    background-color: #fc575e;
+    color: white;
 }
-
 button {
-    padding: 6px 10px;
+    padding: 8px 12px;
     margin-right: 5px;
-    background-color: #4CAF50;
+    background-color: #fc575e;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
-
 button:hover {
-    background-color: #45a049;
+    background-color: #f7b42c;
 }
